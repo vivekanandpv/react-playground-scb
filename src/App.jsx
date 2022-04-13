@@ -8,8 +8,12 @@ const App = (props) => {
       <div className='container p-5'>
         <h3>App Component</h3>
         <hr />
-        <Sample />
-        <Demo />
+        <Sample message='Good morning' firstName='Gangadhar' lastName='K' />
+        <Demo
+          year={2022}
+          colors={['red', 'green', 'blue']}
+          book={{ title: 'War and Peace', price: 100 }}
+        />
       </div>
     </>
   );
