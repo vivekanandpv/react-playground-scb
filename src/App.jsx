@@ -3,6 +3,7 @@ import Demo from './components/Demo';
 import Sample from './components/Sample';
 
 const App = (props) => {
+  const flag = true;
   return (
     <>
       <div className='container p-5'>
@@ -14,6 +15,8 @@ const App = (props) => {
           colors={['red', 'green', 'blue']}
           book={{ title: 'War and Peace', price: 100 }}
         />
+        <hr />
+        {flag ? <p>Flag is true</p> : null}
       </div>
     </>
   );

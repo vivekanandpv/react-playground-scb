@@ -7,8 +7,8 @@ const Demo = (props) => {
       <hr />
       <p>{props.year}</p>
       <ul>
-        {props.colors.map((c) => {
-          return <li>{c}</li>;
+        {props.colors.map((c, i) => {
+          return <li key={i}>{c}</li>;
         })}
       </ul>
     </>
