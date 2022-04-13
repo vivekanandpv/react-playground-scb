@@ -5,9 +5,12 @@ const Demo = (props) => {
     <>
       <h3>Demo Component</h3>
       <hr />
-      <p>
-        {props.year} {props.colors} {props.book.title}
-      </p>
+      <p>{props.year}</p>
+      <ul>
+        {props.colors.map((c) => {
+          return <li>{c}</li>;
+        })}
+      </ul>
     </>
   );
 };
