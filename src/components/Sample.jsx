@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Sample = (props) => {
+  const [counter, setCounter] = useState(0);
+
   const handleClick = () => {
-    console.log('Button clicked');
+    setCounter(counter + 1);
   };
 
   return (
     <>
-      <h3>Sample Component</h3>
+      <h3>Sample Component: {counter}</h3>
       <hr />
       <p>
         {props.message} :: {props.firstName} :: {props.lastName}
